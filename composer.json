@@ -15,7 +15,9 @@
     ],
     "require": {
         "php": "^8.3",
-        "silverstripe/framework": "^6"
+        "silverstripe/framework": "dev-pulls/6/template-engine-moved as 6.x-dev",
+        "silverstripe/assets": "dev-pulls/3/template-engine-moved as 3.9999999.9999999.9999999-dev",
+        "silverstripe/behat-extension": "dev-pulls/6/template-engine-moved as 6.9999999.9999999.9999999-dev"
     },
     "require-dev": {
         "silverstripe/recipe-testing": "^4",
@@ -34,6 +36,20 @@
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "repositories": {
+        "silverstripe/framework": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-framework.git"
+        },
+        "silverstripe/assets": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-assets.git"
+        },
+        "silverstripe/behat-extension": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-behat-extension.git"
         }
     }
 }
